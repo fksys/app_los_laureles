@@ -1,0 +1,158 @@
+
+/*!
+ * Sidebar menu for Bootstrap 4
+ * Copyright Zdeněk Papučík
+ * MIT License
+*/
+
+/* bg website
+   ========================================================================== */
+body {
+    background: #f4f4f4;
+}
+
+/* sidebar bg
+   ========================================================================== */
+.bg-white-menu.sidebar {
+    background: #fff;
+}
+
+/* sidebar list
+   ========================================================================== */
+.bg-white-menu.sidebar ul.menu li {
+    color: #8a8a8a;
+}
+
+.bg-white-menu.sidebar ul.menu li ul li ul {
+    border-left: 0.0625rem solid #ebebeb;
+}
+
+/* sidebar hyperlink
+   ========================================================================== */
+.bg-white-menu.sidebar ul.menu li ul li a {
+    border-radius: 0.1875rem;
+    color: #494949;
+}
+
+.bg-white-menu.sidebar ul.menu li ul li a:hover {
+    background: #f4f4f4;
+
+}
+
+.bg-white-menu.sidebar ul.menu li ul li a.current {
+    background: #f4f4f4;
+}
+
+.bg-white-menu.sidebar ul.menu li ul li.parent a.current {
+    background: #f4f4f4;
+}
+
+.bg-white-menu.sidebar ul.menu li ul li.parent .submenu a.current {
+    background: #f4f4f4;
+}
+
+/* sidebar hyperlink icon
+   ========================================================================== */
+.bg-white-menu.sidebar ul.menu li ul li.parent a.employ:before {
+    color: #b9b9b9;
+}
+
+.bg-white-menu.sidebar ul.menu li ul li.parent a.employ.active:before {
+    color: #494949;
+}
+
+/* navbar bg (dont change color)
+   ========================================================================== */
+.bg-white-navbar.navbar {
+    background: #f4f4f4;
+}
+
+/* sidebar menu button
+   ========================================================================== */
+.bg-white-navbar a#sidebar.bars {
+    color: #c9c9c9;
+}
+
+.bg-white-navbar a#sidebar.bars:hover {
+    color: #919191;
+}
+
+/* navbar title
+   ========================================================================== */
+.bg-white-navbar.navbar a.navbar-title {
+    color: #494949;
+}
+
+/* website content
+   ========================================================================== */
+.content .box {
+    color: #494949;
+}
+
+/* navbar user dropdown nav icon
+   ========================================================================== */
+.bg-white-dropdown ul.navbar-nav li i {
+    color: #494949;
+}
+
+/* navbar user dropdown toggle
+   ========================================================================== */
+.bg-white-dropdown ul.navbar-nav li a.toggle {
+    color: #494949;
+}
+
+.bg-white-dropdown ul.navbar-nav li a.toggle:before {
+    color: #c9c9c9;
+}
+
+/* navbar user dropdown menu
+   ========================================================================== */
+.bg-white-dropdown ul.navbar-nav li ul.dropdown-menu {
+    border-color: transparent;
+    background: #f4f4f4;
+}
+
+/* navbar user dropdown menu icon
+   ========================================================================== */
+.bg-white-dropdown ul.navbar-nav li ul.dropdown-menu a.dropdown-item:hover i {
+    color: #494949;
+}
+
+/* navbar user dropdown menu hyperlink
+   ========================================================================== */
+.bg-white-dropdown ul.navbar-nav li ul.dropdown-menu li a {
+    color: #494949;
+}
+
+.bg-white-dropdown ul.navbar-nav li ul.dropdown-menu li a:hover {
+    color: #494949;
+    background: #fdfdfd;
+}
+
+.bg-white-dropdown ul.navbar-nav li ul.dropdown-menu li a:active {
+    background: none;
+}
+
+/* nanobar
+   ========================================================================== */
+.nanobar .bar {
+    background: #4b4b4b;
+}
+
+/* custom perfect scrollbar style
+   ========================================================================== */
+.bg-white-menu.sidebar .ps__thumb-y {
+    background: #e0e0e0;
+}
+
+.bg-white-menu.sidebar .ps__rail-y:hover > .bg-white-menu.sidebar .ps__thumb-y,
+.bg-white-menu.sidebar .ps__rail-y:focus > .bg-white-menu.sidebar .ps__thumb-y,
+.bg-white-menu.sidebar .ps__rail-y.ps--clicking .ps__thumb-y {
+    background: #e0e0e0;
+}
+
+.bg-white-menu.sidebar .ps .ps__rail-y:hover,
+.bg-white-menu.sidebar .ps .ps__rail-y:focus,
+.bg-white-menu.sidebar .ps .ps__rail-y.ps--clicking {
+    background: none;
+}
