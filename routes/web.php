@@ -11,11 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/index', 'indexController@index')->name('index');  
+Route::redirect('/','/index');
 
-Route::get('/productos',function(){
-    return view('productos.listar');
-
-});
+Route::get('/productos/{id}','ProductosController@listar')->name('listar_productos');
