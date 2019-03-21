@@ -4,6 +4,6 @@
 		
 		<!-- Contenido del Sitio -->
 		@section('content')
-			@include('layouts.content')
+			@include('layouts.carousel')
 		@endsection
 	

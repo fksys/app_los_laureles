@@ -19,6 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->enum('type',['cliente','admin']);
+            $table->Integer('persona_id_persona')->unsigned();
+            $table->foreign('persona_id_persona')->references('id_persona')->on('persona')->onDelete('cascade');
             $table->rememberToken();
             $table->timestamps();
         });

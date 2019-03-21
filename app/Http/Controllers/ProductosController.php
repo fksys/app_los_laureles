@@ -21,4 +21,6 @@ class ProductosController extends Controller
         ->with('categorias',$categorias)
         ->with('subcategorias',$subcategorias);
     }
+
+    
 }

@@ -5,6 +5,7 @@
 'use strict';
 
 const cartDOM = document.querySelector('.cart');
+const cartBodyDOM = document.querySelector('.cart-body');
 const addToCartButtonsDOM = document.querySelectorAll('[data-action="addToCart"]');
 const shopCartButtonDOM = document.querySelector('.shop-cart');
 let cart = (JSON.parse(localStorage.getItem('cart')) || []);
@@ -62,7 +63,7 @@ shopCartButtonDOM.addEventListener('click',()=>{
 
 
 function insertItemToDOM(producto) {
-    cartDOM.insertAdjacentHTML('beforeend',`
+    cartBodyDOM.insertAdjacentHTML('afterbegin',`
     <div class="cart__item">
         <img class="cart__item__image" src="${producto.imagen}" alt="${producto.nombre}">
         <h5 class="cart__item__name"> ${producto.nombre} </h5>

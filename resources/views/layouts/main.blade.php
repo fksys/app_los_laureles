@@ -10,6 +10,7 @@
     <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' 
     integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' 
     crossorigin='anonymous'>>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="{{ asset('css/sidebar.menu.white.css')}}">
     <link rel="stylesheet" href="{{ asset('css/main.css')}}">
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}">
@@ -78,11 +79,11 @@
                 </nav>
                 <section class="container__producto row justify-content-center">
                     <div class="cart" style="display: none">
-                        <h2> Cart </h2>
+                        <h2 class="cart_title"> Cart </h2>
                         <hr>
-                        <div class="cart-buttons">
-                            <button class="btn btn-info btn-block" style="display:none">Agregar a la Lista</button>
-                            <button class="btn btn-secondary btn-block">Crear Lista</button>
+                        <div class="cart-body">
+                            <button class="btn btn-info btn-block" id="btnAddList " style="display:none">Agregar a la Lista</button>
+                            <button class="btn btn-secondary btn-block" id="btnCreateList">Crear Lista</button>
                         </div>
                     </div> 
                     @yield('content')
