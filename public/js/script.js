@@ -103,9 +103,9 @@ cartItemsDOM.forEach(cartItemDOM =>{
                 }else{
                     cartItemDOM.remove();
                     cart = cart.filter(cartItem => cartItem.nombre !== producto.nombre);
-                    localStorage.setItem('cart',JSON.stringify(cart));
                     addToCartButtonDOM.innerText = 'Agregar a la canasta';
                     addToCartButtonDOM.disabled = false;
+                    localStorage.setItem('cart',JSON.stringify(cart));
                 }
             }
         });
@@ -115,9 +115,10 @@ cartItemsDOM.forEach(cartItemDOM =>{
             if(cartItem.nombre === producto.nombre){
                 cartItemDOM.remove();
                 cart = cart.filter(cartItem => cartItem.nombre !== producto.nombre);
-                localStorage.setItem('cart',JSON.stringify(cart));
                 addToCartButtonDOM.innerText = 'Agregar a la canasta';
                 addToCartButtonDOM.disabled = false;
+                localStorage.setItem('cart',JSON.stringify(cart));
+
             }
         });
     });
