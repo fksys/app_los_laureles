@@ -29,5 +29,9 @@ class indexController extends Controller
 
     }
 
+    public function mostrarProductosEnLista(){
+
+        return view('listacompra');
+    }
 
 }
